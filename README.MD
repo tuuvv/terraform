@@ -79,6 +79,25 @@ Enter the path where you want to save the key (e.g., `./keypair/udemy-key`).
    ```bash
    terraform destroy
    ```
+1. **Initialize** Terraform:
+   ```bash
+   terraform init
+   ```
+
+2. **Plan** the infrastructure:
+   ```bash
+   terraform plan --var-file "terraform.tfvars"
+   ```
+
+3. **Apply** the changes to deploy EC2:
+   ```bash
+   terraform apply --var-file "terraform.tfvars"
+   ```
+
+4. **Destroy** the infrastructure when done:
+   ```bash
+   terraform destroy --var-file "terraform.tfvars"
+   ```
 
 
 ## Commands Reference
